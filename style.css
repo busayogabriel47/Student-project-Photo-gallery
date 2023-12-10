@@ -1,0 +1,96 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #CFD0CD;
+    width: 100%;
+}
+
+.candidate{
+    display: flex;
+    gap: 6px;
+
+}
+.parent{margin: 2.5rem 0;}
+.candidate img{
+    border-radius: 50%;
+    width: 30px;
+}
+.top .left, .top .right,
+.bottom .left, .bottom .right, 
+.sectionTwo{
+    margin-bottom: 1.2rem;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.left{
+    background-color: #7441C6;
+}
+.right{background-color: #47566A;}
+.bottom .left{
+    background-color: white;
+}
+.bottom .right{
+    background-color: #17212C;
+}
+.left, .right, .standAlone{
+    padding: 1.5rem;
+}
+.comment h5{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+
+@media screen and (min-width: 785px){
+    .main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .parent{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionOne{
+        flex-basis: 75%;
+    }
+    .top .left{
+        margin-right: 0.7rem;
+    }
+    .bottom .right{
+        margin-left: 0.7rem;
+    }
+    .top, .bottom{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .top .left, 
+    .bottom .right{
+       flex-basis: 65%;
+    }
+    .top .right, 
+    .bottom .left{
+        flex-basis: 35%;
+    }
+    .sectionTwo{
+        flex-basis: 25%;
+        background-color: #fff;
+        margin-left: 0.7rem;
+    }
+    .comment h5{
+        font-size: 1.3rem;
+    }
+    .comment p{
+        font-size: 1rem;
+    }
+
+}
